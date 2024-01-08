@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			Ideation WordPress Theme
+			<a href="https://github.com/quicoto/Ideation-WordPress-Theme">Ideation WordPress Theme</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
