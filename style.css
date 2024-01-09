@@ -12,128 +12,135 @@ License URI: LICENSE
 */
 
 :root {
-	--primary: #007bff;
-	--secondary: #0069d6;
-	--font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --primary: #007bff;
+  --secondary: #0069d6;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	font-size: 16px;
-	line-height: 1.5;
-	box-sizing: border-box;
-	-webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-	font-size: 1.2rem;
-	font-family: var(--font-family);
-	margin: 0;
+  font-size: 1.2rem;
+  font-family: var(--font-family);
+  margin: 0;
 }
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+  font-size: 2.2rem;
+  margin: 1rem 0;
 }
 
 b,
 strong {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 a {
-	color: var(--primary);
-	text-decoration: none;
+  color: var(--primary);
+  text-decoration: none;
 }
 
 a:hover {
-	color: var(--secondary);
+  color: var(--secondary);
 }
 
 p {
-	margin-top: 0;
-	margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .idea h2 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .idae h3 {
-	font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .idea h4 {
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .site {
-	margin: 0 auto;
-	max-width: 800px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 1rem;
 }
 
 .site-footer {
-	border-top: 1px solid #ccc;
-	padding: 2rem 0;
+  border-top: 1px solid #ccc;
+  padding: 2rem 0;
 }
 
 .fe-editor label {
-	display: block;
-	margin-bottom: 1rem;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .fe-editor {
 }
 
 .fe-editor textarea {
-	width: 100%;
-	height: 10rem;
-	border: 1px solid #ccc;
-	padding: 0.5rem;
-	font-size: 1rem;
-	border-radius: 5px;
-	margin-bottom: 1rem;
-	outline: none;
+  width: 100%;
+  height: 10rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
 }
 
 .fe-editor [type="submit"] {
-	font-size: 1rem;
-	margin-top: 1rem;
-	background: var(--primary);
-	color: white;
-	border: none;
-	padding: 0.75rem 2rem;
-	margin: 0 0 0 auto;
+  font-size: 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  margin: 0 0 0 auto;
   display: block;
-	border-radius: 5px;
-	cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .fe-editor [type="submit"] {
+    width: auto;
+  }
 }
 
 .fe-editor [type="submit"]:hover {
-	background: var(--secondary);
+  background: var(--secondary);
 }
 
-
 .idea {
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 1rem;
-	margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .idea-actions {
-	display: flex;
-	gap: 1rem;
-	font-size: 80%;
-	justify-content: right;
+  display: flex;
+  gap: 1rem;
+  font-size: 80%;
+  justify-content: right;
 }
 
 .mce-top-part,
 .mce-path {
-	display: none !important;
+  display: none !important;
 }
