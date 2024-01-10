@@ -71,7 +71,7 @@ get_header();
 						$delete_post_link = get_delete_post_link(get_the_ID());
 
 						if ($delete_post_link) {
-							echo '<p><a href="' . $delete_post_link . '">❌ Delete</a></p>';
+							echo '<p><a href="' . $delete_post_link . '">✅ Done</a></p>';
 						}
 					?>
 				</div>
