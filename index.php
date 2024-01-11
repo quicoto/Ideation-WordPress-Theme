@@ -86,5 +86,13 @@ get_header();
 		?>
 	</section>
 	</main><!-- #main -->
+
+	<script>
+		setInterval(() => {
+			if (document.getElementById('my_post_content').value === '') {
+				location.reload(true);
+			}
+		}, 1000 * 60 * 5); // 5 minutes
+	</script>
 <?php
 get_footer();
