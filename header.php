@@ -6,7 +6,6 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package test
  */
 
 ?>
@@ -24,7 +23,7 @@
 	<link rel="manifest" href="<?= get_stylesheet_directory_uri() ?>/assets/site.webmanifest?ver=1.0.2">
 	<link rel="mask-icon" href="<?= get_stylesheet_directory_uri() ?>/assets/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#092635">
 </head>
 
 <body <?php body_class(); ?>>
@@ -35,10 +34,8 @@
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">	<?php bloginfo( 'name' ); ?></a></h1>
 			<?php
 			$test_description = get_bloginfo( 'description', 'display' );
-			if ( $test_description || is_customize_preview() ) :
-				?>
+			if ( $test_description || is_customize_preview() ) : ?>
 				<p class="site-description"><?php echo $test_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
 	</header><!-- #masthead -->

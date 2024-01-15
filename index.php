@@ -9,7 +9,6 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package test
  */
 
 include 'Parsedown.php';
@@ -24,20 +23,20 @@ get_header();
 
 		// Check if the form is submitted
 		if($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['my_post_content'])) {
-				// Prepare post data
-				$my_post = array(
-						'post_content'  => $_POST['my_post_content'],
-						'post_status'   => 'publish'
-				);
+			// Prepare post data
+			$my_post = array(
+					'post_content'  => $_POST['my_post_content'],
+					'post_status'   => 'publish'
+			);
 
-				// Insert the post into the database
-				wp_insert_post( $my_post );
+			// Insert the post into the database
+			wp_insert_post( $my_post );
 		}
 	?>
 
 	<form method="post" class="fe-editor">
 		<label for="my_post_content">What's on your mind?</label>
-		<textarea name="my_post_content" id="my_post_content"></textarea>
+		<textarea name="my_post_content" id="my_post_content" required></textarea>
 		<input type="submit" value="Submit">
 	</form>
 
@@ -90,7 +89,7 @@ get_header();
 	<script>
 		setInterval(() => {
 			if (document.getElementById('my_post_content').value === '') {
-				location.reload(true);
+				window.location.href = '/';
 			}
 		}, 1000 * 60 * 5); // 5 minutes
 	</script>
